@@ -69,7 +69,7 @@ int main(int argc, const char** argv)
          return 2;
     }
 
-    int workgroup_size = min((int) device.maxWorkGroupSize(), sinResult.cols);
+    int workgroup_size = sinResult.cols;
     size_t localThreads[2];
     size_t globalThreads[2];
 
