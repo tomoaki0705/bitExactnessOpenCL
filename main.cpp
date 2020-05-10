@@ -63,7 +63,7 @@ int main(int argc, const char** argv)
     }
 
     cv::ocl::ProgramSource source(cv::String("sample"), "sincos", kernel, "");
-    cv:;ocl::Kernel sampleKernel("sincosKernel", source, "");
+    cv::ocl::Kernel sampleKernel("sincosKernel", source, "");
     if (sampleKernel.empty())
     {
          return 2;
